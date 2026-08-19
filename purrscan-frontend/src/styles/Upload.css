@@ -1,0 +1,324 @@
+/* ===========================
+   UPLOAD SECTION
+=========================== */
+
+.upload {
+  width: 100%;
+  margin-top: 70px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 0;
+}
+
+.upload-content {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.upload-title {
+  position: relative;
+
+  width: 520px;
+
+  margin-left: -45px;
+}
+
+.title-bg {
+  width: 100%;
+  display: block;
+}
+
+.upload-title h2 {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+
+  padding-left: 70px;
+  padding-top: 20px;
+
+  margin: 0;
+
+  font-family: "Sour Gummy", cursive;
+
+  font-size: 40px;
+  font-weight: 600;
+
+  color: #00589f;
+  text-shadow: 0px 8px 5px rgba(143, 143, 143, 0.893);
+  line-height: 1.6;
+}
+
+/* ===========================
+   UPLOAD AREA
+=========================== */
+
+.upload-area {
+  width: 500px;
+  height: 380px;
+
+  position: relative;
+}
+
+.upload-frame {
+  position: absolute;
+
+  width: 100%;
+
+  top: 60%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  max-width: 100%;
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.take-picture-btn {
+  width: 170px;
+  height: 52px;
+
+  margin: 35px auto 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  border-radius: 30px;
+
+  background: #f8f8f8;
+
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.22);
+
+  align-self: center;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.take-picture-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.28);
+}
+
+.take-picture-btn:active {
+  transform: scale(0.97);
+}
+
+.take-picture-btn span {
+  font-family: "Afacad", sans-serif;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  color: #333;
+}
+
+/* =================================================
+   LAPTOP
+   993px - 1199px
+================================================= */
+
+@media (min-width: 993px) and (max-width: 1199px) {
+  .upload {
+    margin-top: 60px;
+  }
+
+  .upload-title {
+    width: 450px;
+
+    margin-left: -35px;
+  }
+
+  .upload-title h2 {
+    padding-left: 42px;
+    padding-top: 17px;
+
+    font-size: 36px;
+  }
+
+  .upload-area {
+    width: 430px;
+    height: 330px;
+  }
+
+  .take-picture-btn {
+    width: 155px;
+    height: 48px;
+
+    margin-top: 30px;
+  }
+
+  .take-picture-btn span {
+    font-size: 17px;
+  }
+}
+
+/* =================================================
+   TABLET
+   769px - 992px
+================================================= */
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .upload {
+    margin-top: 50px;
+  }
+
+  .upload-title {
+    width: 350px;
+
+    margin-left: -25px;
+  }
+
+  .upload-title h2 {
+    padding-left: 35px;
+    padding-top: 14px;
+
+    font-size: 28px;
+
+    line-height: 1.6;
+  }
+
+  .upload-area {
+    width: 340px;
+    height: 270px;
+  }
+
+  .upload-frame {
+    top: 58%;
+  }
+
+  .take-picture-btn {
+    width: 140px;
+    height: 44px;
+
+    margin-top: 50px;
+  }
+
+  .take-picture-btn span {
+    font-size: 15px;
+  }
+}
+
+/* =================================================
+   HP / MOBILE
+   481px - 768px
+================================================= */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .upload {
+    margin-top: 40px;
+  }
+
+  .upload-title {
+    width: 250px;
+
+    margin-left: -15px;
+  }
+
+  .upload-title h2 {
+    padding-left: 28px;
+    padding-top: 8px;
+
+    font-size: 20px;
+
+    line-height: 1.6;
+  }
+
+  .upload-area {
+    width: 250px;
+    height: 210px;
+  }
+
+  .upload-frame {
+    top: 58%;
+  }
+
+  .take-picture-btn {
+    width: 100px;
+    height: 30px;
+
+    margin-top: 30px;
+  }
+
+  .take-picture-btn span {
+    font-size: 11px;
+  }
+}
+
+/* =================================================
+   HP 390px
+   0px - 480px
+================================================= */
+
+@media (max-width: 480px) {
+  .upload {
+    margin-top: 35px;
+  }
+
+  .upload-content {
+    width: 100%;
+  }
+
+  /* TITLE */
+
+  .upload-title {
+    width: 200px;
+
+    margin-left: -20px;
+  }
+
+  .upload-title h2 {
+    padding-left: 25px;
+    padding-top: 8px;
+
+    font-size: 15px;
+
+    line-height: 1.65;
+  }
+
+  /* UPLOAD FRAME */
+
+  .upload-area {
+    width: 200px;
+    height: 220px;
+  }
+
+  .upload-frame {
+    width: 100%;
+
+    top: 58%;
+  }
+
+  /* BUTTON */
+
+  .take-picture-btn {
+    width: 80px;
+    height: 30px;
+
+    margin-top: 1px;
+  }
+
+  .take-picture-btn span {
+    font-size: 10px;
+  }
+}

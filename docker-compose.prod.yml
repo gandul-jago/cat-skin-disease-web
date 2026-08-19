@@ -1,0 +1,16 @@
+services:
+  frontend:
+    build:
+      context: ./purrscan-frontend
+      dockerfile: Dockerfile.prod
+    container_name: purrscan-frontend-prod
+    ports:
+      - "8080:80"
+
+  backend:
+    build:
+      context: ./purrscan-backend
+      dockerfile: Dockerfile.prod
+    container_name: purrscan-backend-prod
+    ports:
+      - "8000:8000"
