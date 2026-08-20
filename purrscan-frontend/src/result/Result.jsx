@@ -66,7 +66,7 @@ function Result() {
 
           <div className="info-cards">
             <div className="info-card symptoms">
-              <h4>Gejala</h4>
+              <h4>Symptoms</h4>
 
               <ul>
                 {result.symptoms?.map((item, index) => (
@@ -76,7 +76,7 @@ function Result() {
             </div>
 
             <div className="info-card causes">
-              <h4>Penyebab</h4>
+              <h4>Causes</h4>
 
               <ul>
                 {result.causes?.map((item, index) => (
@@ -86,7 +86,7 @@ function Result() {
             </div>
 
             <div className="info-card prevention">
-              <h4>Pencegahan</h4>
+              <h4>Prevention</h4>
 
               <ul>
                 {result.prevention?.map((item, index) => (
