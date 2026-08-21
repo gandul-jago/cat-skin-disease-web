@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import Catrun from "../assets/images/cat-result.svg";
+import CatrunSvg from "../assets/images/cat-result.svg?react";
 import "./Result.css";
 
 function Result() {
@@ -35,7 +35,8 @@ function Result() {
         </button>
 
         <div className="result-top">
-          <img src={Catrun} alt="Cat illustration" className="cat-result" />
+          {/* Menggunakan CatrunSvg sebagai komponen React */}
+          <CatrunSvg className="cat-result" aria-label="Cat illustration" />
 
           <div className="result-intro">
             <h1>{result.prediction}</h1>

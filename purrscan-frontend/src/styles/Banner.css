@@ -1,0 +1,94 @@
+/* ===========================
+   BANNER
+=========================== */
+
+.banner {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.banner-item {
+  height: 48px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Afacad", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+
+  color: #626262;
+}
+
+/* ===========================
+   COLORS
+=========================== */
+
+.scabies {
+  background: #f5b6ca;
+}
+
+.flea {
+  background: #9ed8f2;
+}
+
+.ringworm {
+  background: #ffe5aa;
+}
+
+.health {
+  background: #7ea5ed;
+}
+
+/* =================================================
+   LAPTOP
+================================================= */
+
+@media (min-width: 993px) and (max-width: 1199px) {
+  .banner-item {
+    height: 44px;
+    font-size: 24px;
+  }
+}
+
+/* =================================================
+   TABLET
+================================================= */
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .banner-item {
+    height: 40px;
+    font-size: 20px;
+    margin-top: -20px;
+  }
+}
+
+/* =================================================
+   MOBILE
+================================================= */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .banner-item {
+    height: 32px;
+    font-size: 14px;
+    margin-top: -40px;
+  }
+}
+
+/* =================================================
+   HP 390px
+================================================= */
+
+@media (max-width: 480px) {
+  .banner-item {
+    height: 25px;
+    font-size: 10px;
+    margin-top: -55px;
+  }
+}

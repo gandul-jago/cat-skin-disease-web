@@ -230,14 +230,15 @@
 
   .footer-social-container h3 {
     font-size: 9.5px;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
   }
 
   .social-icons {
     gap: 8px;
+    margin-left: -5px;
   }
 
   .social-icons svg {
-    width: 18px;
+    width: 25px;
   }
 }

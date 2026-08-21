@@ -5,7 +5,7 @@ import Hero from "./components/Hero";
 import Feature from "./components/Feature";
 import Upload from "./components/Upload";
 import Footer from "./components/Footer";
-
+import Banner from "./components/Banner";
 import Result from "./result/Result";
 
 function Home() {
@@ -14,6 +14,7 @@ function Home() {
       <Navbar />
       <Hero />
       <Feature />
+      <Banner />
       <Upload />
       <Footer />
     </>
