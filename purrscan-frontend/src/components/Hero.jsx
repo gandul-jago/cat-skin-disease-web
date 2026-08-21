@@ -1,5 +1,5 @@
 import "../styles/Hero.css";
-import heroImage from "../assets/images/human-cat.svg";
+import HeroImageSvg from "../assets/images/human-cat.svg?react";
 
 function Hero() {
   return (
@@ -20,7 +20,8 @@ function Hero() {
       <a href="#prediction" className="scan-btn">
         Scan Now
       </a>
-      <img src={heroImage} alt="Cat Illustration" className="hero-image" />
+
+      <HeroImageSvg className="hero-image" aria-label="Cat Illustration" />
     </section>
   );
 }
