@@ -1,20 +1,20 @@
 import "../styles/Footer.css";
 
-import footerBg from "../assets/images/footer.svg";
-import logo from "../assets/images/logo-icon.svg";
+import FooterBgSvg from "../assets/images/footer.svg?react";
+import LogoSvg from "../assets/images/logo-icon.svg?react";
 
-import github from "../assets/images/github.svg";
-import linkedin from "../assets/images/linkedin.svg";
-import whatsapp from "../assets/images/whatsapp.svg";
+import GithubSvg from "../assets/images/github.svg?react";
+import LinkedinSvg from "../assets/images/linkedin.svg?react";
+import WhatsappSvg from "../assets/images/whatsapp.svg?react";
 
 function Footer() {
   return (
     <footer className="footer" id="about">
       <div className="footer-wrapper">
-        <img src={footerBg} alt="" className="footer-bg" />
+        <FooterBgSvg className="footer-bg" aria-hidden="true" />
 
         <div className="footer-overlay">
-          <img src={logo} alt="PurrScan" className="footer-logo" />
+          <LogoSvg className="footer-logo" aria-label="PurrScan" />
 
           <p className="footer-description">
             Detect common feline skin diseases from a single photo. View
@@ -30,22 +30,27 @@ function Footer() {
                 href="https://github.com/gandul-jago"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="GitHub"
               >
-                <img src={github} alt="GitHub" />
+                <GithubSvg />
               </a>
+
               <a
                 href="https://www.linkedin.com/in/ghaniyasyifa05/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="LinkedIn"
               >
-                <img src={linkedin} alt="LinkedIn" />
+                <LinkedinSvg />
               </a>
+
               <a
                 href="https://wa.me/6285156062771"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="WhatsApp"
               >
-                <img src={whatsapp} alt="WhatsApp" />
+                <WhatsappSvg />
               </a>
             </div>
           </div>

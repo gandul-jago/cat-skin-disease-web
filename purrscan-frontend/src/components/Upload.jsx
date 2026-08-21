@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 
 import "../styles/Upload.css";
 
-import note from "../assets/images/Subtract.svg";
-import uploadFrame from "../assets/images/kotak-cam.svg";
+import NoteSvg from "../assets/images/Subtract.svg?react";
+import UploadFrameSvg from "../assets/images/kotak-cam.svg?react";
 
 function Upload() {
   const fileInputRef = useRef(null);
@@ -82,9 +82,9 @@ function Upload() {
         style={{ display: "none" }}
       />
 
-      {/* Judul */}
+      {/* Judul Banner */}
       <div className="upload-title">
-        <img src={note} alt="" className="title-bg" />
+        <NoteSvg className="title-bg" aria-hidden="true" />
 
         <h2>
           Take Your Cat Picture
@@ -93,10 +93,10 @@ function Upload() {
         </h2>
       </div>
 
-      {/* Area Upload */}
+      {/* Area Upload Frame */}
       <div className="upload-content">
         <div className="upload-area">
-          <img src={uploadFrame} className="upload-frame" alt="" />
+          <UploadFrameSvg className="upload-frame" aria-hidden="true" />
         </div>
 
         <button
