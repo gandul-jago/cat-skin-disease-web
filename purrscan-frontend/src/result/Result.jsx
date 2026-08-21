@@ -10,7 +10,6 @@ function Result() {
   const { result, image } = location.state || {};
 
   useEffect(() => {
-    // Cek apakah halaman dibuka karena refresh
     const navigationEntry = performance.getEntriesByType("navigation")[0];
 
     if (navigationEntry?.type === "reload") {
@@ -25,6 +24,7 @@ function Result() {
   return (
     <div className="result-page">
       <div className="result-card">
+        {/* X */}
         <button
           className="result-close"
           onClick={() => {
@@ -34,8 +34,8 @@ function Result() {
           ×
         </button>
 
+        {/* RESULT */}
         <div className="result-top">
-          {/* Menggunakan CatrunSvg sebagai komponen React */}
           <CatrunSvg className="cat-result" aria-label="Cat illustration" />
 
           <div className="result-intro">
@@ -44,6 +44,7 @@ function Result() {
           </div>
         </div>
 
+        {/* INFO */}
         <div className="result-info">
           <div className="cat-info">
             <h3>Know more about your cat!</h3>
@@ -58,9 +59,7 @@ function Result() {
 
             <div className="prediction-result">
               <span>Prediction</span>
-
               <h2>{result.prediction}</h2>
-
               <p>Confidence: {result.confidence}%</p>
             </div>
           </div>
@@ -68,7 +67,6 @@ function Result() {
           <div className="info-cards">
             <div className="info-card symptoms">
               <h4>Symptoms</h4>
-
               <ul>
                 {result.symptoms?.map((item, index) => (
                   <li key={index}>{item}</li>
@@ -78,7 +76,6 @@ function Result() {
 
             <div className="info-card causes">
               <h4>Causes</h4>
-
               <ul>
                 {result.causes?.map((item, index) => (
                   <li key={index}>{item}</li>
@@ -88,7 +85,6 @@ function Result() {
 
             <div className="info-card prevention">
               <h4>Prevention</h4>
-
               <ul>
                 {result.prevention?.map((item, index) => (
                   <li key={index}>{item}</li>
@@ -98,6 +94,7 @@ function Result() {
           </div>
         </div>
 
+        {/* ANOTHER SCAN */}
         <button
           className="scan-another-btn"
           onClick={() => {
