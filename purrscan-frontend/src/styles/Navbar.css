@@ -37,12 +37,12 @@
 }
 
 .logo {
+  display: block;
   width: clamp(150px, 18vw, 230px);
   height: auto;
-
+  flex-shrink: 0;
   transition: transform 0.25s ease;
 }
-
 .logo:hover {
   transform: scale(1.04);
 }

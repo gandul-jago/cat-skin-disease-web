@@ -1,17 +1,17 @@
 import "../styles/Feature.css";
 
-import background from "../assets/images/kotaknya4.svg";
-import cat from "../assets/images/kucing-kupu.svg";
+import BackgroundSvg from "../assets/images/kotaknya4.svg?react";
+import CatSvg from "../assets/images/kucing-kupu.svg?react";
 
 function Feature() {
   return (
     <section className="feature">
       <div className="feature-wrapper">
-        <img src={background} alt="" className="feature-bg" />
+        <BackgroundSvg className="feature-bg" aria-hidden="true" />
 
         <div className="feature-overlay">
           <div className="feature-top">
-            <img src={cat} alt="Cat" className="feature-cat" />
+            <CatSvg className="feature-cat" aria-label="Cat" />
 
             <div className="feature-text">
               <h2>
