@@ -66,13 +66,16 @@ cd purrscan
 
 ## Preview
 
-![home](D:\cat-skin-disease-web\purrscan-frontend\src\assets\images\home.jpeg)
+<p align="center">
+  <img src="docs/home.jpeg" width="300">
+</p>
 
 The prediction result displays the detected condition, confidence score,
 symptoms, causes, and prevention information.
 
-![result](D:\cat-skin-disease-web\purrscan-frontend\src\assets\images\result.jpeg)
-
+<p align="center">
+  <img src="docs/result.jpeg" width="900">
+</p>
 ## Disclaimer
 
 PurrScan is developed for educational and research purposes. The prediction results are not intended to replace professional veterinary diagnosis.
