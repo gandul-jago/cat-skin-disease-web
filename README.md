@@ -66,12 +66,12 @@ cd purrscan
 
 ## Preview
 
-![home](docs/home.jpeg.png)
+![home](D:\cat-skin-disease-web\purrscan-frontend\src\assets\images\home.jpeg)
 
 The prediction result displays the detected condition, confidence score,
 symptoms, causes, and prevention information.
 
-![result](docs/result.jpeg.png)
+![result](D:\cat-skin-disease-web\purrscan-frontend\src\assets\images\result.jpeg)
 
 ## Disclaimer
 
