@@ -4,8 +4,6 @@
 
 The system uses **EfficientNetB0** as the classification model and provides a web interface where users can upload a cat skin image and receive a predicted disease along with its confidence score.
 
-![PurrScan Preview](docs/preview.png)
-
 ## About
 
 PurrScan was developed as a machine learning and web application project to implement an image classification model into a usable web-based system.
@@ -68,16 +66,12 @@ cd purrscan
 
 ## Preview
 
-<p align="center">
-  <img src="docs/home.jpeg" width="300">
-</p>
+![home](docs/home.jpeg.png)
 
 The prediction result displays the detected condition, confidence score,
 symptoms, causes, and prevention information.
 
-<p align="center">
-  <img src="docs/result.jpeg" width="900">
-</p>
+![result](docs/result.jpeg.png)
 
 ## Disclaimer
 
